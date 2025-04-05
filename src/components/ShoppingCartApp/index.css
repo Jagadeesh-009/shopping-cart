@@ -1,0 +1,85 @@
+.ShoppingCartAppContainer {
+    background-color: rgb(237, 237, 237);
+    min-height: 100vh;
+    padding: 20px 40px;
+  }
+  .ShoppingCartHeading {
+    text-align: center;
+  }
+  .productsList {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+  }
+  .productsListContainer {
+    background-color: #fff;
+    min-height: 125px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .AddtoCartButton {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(45, 173, 224);
+  }
+  .subtotalContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cartSummary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .animation {
+    background-color: rgb(241, 254, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .emptyCart {
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cartItemDetails {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subButton {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  .addButton {
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    margin-left: 10px;
+  }
+  .removeButton {
+    background-color: rgb(45, 173, 224);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    margin-left: 10px;
+  }
