@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Objective:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a simple React application that allows users to add products to a shopping cart, update quantities, and track their progress towards earning a free gift.
 
-## Available Scripts
+Requirements:
 
-In the project directory, you can run:
+1. Display Products:
 
-### `npm start`
+• Use the given PRODUCTS constant to render a list of products.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+• Each product should have a quantity selector with + and -buttons and an "Add to Cart" button.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Shopping Cart:
 
-### `npm test`
+• Display the cart below the products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cart • Allow users to update product quantities in the cart.
 
-### `npm run build`
+• Allow users to remove products from the cart.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Free Gift Rule:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+• If the cart subtotal reaches THRESHOLD (1000), add the FREE_GIFT product automatically.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• Show a progress bar above the cart indicating how much more needs to be added before the free gift is unlocked.
 
-### `npm run eject`
+• Ensure only one free gift is added, and it cannot be removed manually.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+• Make sure the cart gift item is removed if the cart value goes below the Threshold value
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. State Management:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+• Use React's built-in state management (useState, useEffect).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+• Maintain separate states for products and cart.
 
-## Learn More
+5. User Experience:Show a message when the free gift is added.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Shopping Cart App
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+• Ensure smooth interactions for adding/removing items.
+Code for Data (CodePen):
 
-### Code Splitting
+const PRODUCTS = [
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+{id: 1, name: "Laptop", price: 500),
 
-### Analyzing the Bundle Size
+{ id: 2, name: "Smartphone", price: 300 },
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+{ id: 3, name: "Headphones", price: 100},
 
-### Making a Progressive Web App
+{id: 4, name: "Smartwatch", price: 150),
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1.
 
-### Advanced Configuration
+const FREE_GIFT = (id: 99, name: "Wireless Mouse", price: 0);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+const THRESHOLD = 1000;
 
-### Deployment
+Notes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I • Implement the missing features like the quantity selector, cart updates, and free gift logic.
 
-### `npm run build` fails to minify
+• You can use any styling approach (CSS, styled-components, Tailwind, etc.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+• Feel free to add more Ul enhancements for a better user experience.
